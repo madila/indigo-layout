@@ -1,0 +1,21 @@
+{
+  "name": "indigo-layout",
+  "homepage": "https://github.com/madila/indigo-layout",
+  "authors": [
+    "Ruben <contact@rubenmadila.com>"
+  ],
+  "description": "Layout Web Component",
+  "main": "indigo-layout.html",
+  "keywords": [
+    "webcomponentsjs",
+    "polymer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
