@@ -3,7 +3,6 @@
 Copyright (c) 2017 The Indigo Project Authors. All rights reserved.
 -->
 <link rel="import" href="../polymer/polymer.html">
-
 <!--
 Indigo Layout
 -->
@@ -12,14 +11,22 @@ Indigo Layout
         <slot></slot>
     </template>
     <script>
-        Polymer({
-            is: 'indigo-layout',
-            properties: {
+        // define the element's class element
+        class IndigoLayout extends Polymer.Element {
 
-            },
-            created: function() {
+            static get is() { return 'indigo-layout'; }
+
+            // Element class can define custom element reactions
+            connectedCallback() {
+                super.connectedCallback();
+                this.setAttribute('resolved', 'true');
+                console.log('indigo-layout created!');
+            }
+
+            ready() {
+                super.ready();
                 this.setAttribute('resolved', 'true');
             }
-        });
+        }
     </script>
 </dom-module>
